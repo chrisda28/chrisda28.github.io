@@ -1,6 +1,6 @@
 
 
-@keyframes gradient-animation { /*i can delete this line*/
+@keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -12,12 +12,58 @@
   }
 }
 
-
-
 .gradient-background {
     background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
     background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;  /*i can delete this line*/
+    animation: gradient-animation 18s ease infinite;
   }
 
-  
+  /* ALL CODE ABOVE THIS COMMENT IS NOT MINE, I USED IT FROM A PYTHON BOOTCAMP(100 days of code by Angela Yu) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem 7%;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+#skills {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
