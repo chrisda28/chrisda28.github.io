@@ -84,13 +84,29 @@ main {
   gap: 1rem;
 }
 
-#skills ul {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-
+.skillgrid {
+  display: grid;
+  gap: 1rem;
 }
 
+.skillcard {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skillcard ul li {
+  margin-top: 3;
+}
+
+
+.skill-level {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
 
 
 #projects{
