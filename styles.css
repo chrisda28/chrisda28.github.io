@@ -85,27 +85,31 @@ main {
 }
 
 .skillgrid {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
+
 
 .skillcard {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    flex: 0 0 auto;
+    width: calc(25% - 1rem);  /* Adjust for 4 columns, accounting for gap */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-.skillcard ul li {
-  margin-top: 3;
-}
 
 
 .skill-level {
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 10px;
-  border-radius: 5px;
-  margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 10px;  /* Increased height for vertical orientation */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px auto;
 }
 
 
