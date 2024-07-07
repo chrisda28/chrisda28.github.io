@@ -98,7 +98,7 @@ main {
     width: calc(25% - 1rem);  /* Adjust for 4 columns, accounting for gap */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 3rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -137,4 +137,10 @@ footer {
 h1 {
   margin: 1rem;
   padding: 1rem;
+}
+
+ul {
+  margin: .5rem;
+  padding: .05rem;
+  list-style-type: none;
 }
