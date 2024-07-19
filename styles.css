@@ -105,6 +105,19 @@ main {
   padding: 4rem 0;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 4rem 0;
+}
+
+#contact ul a {
+  color: white;
+}
 
 
 #skills {
