@@ -10,7 +10,7 @@
 </head>
 <body class="gradient-background">
     <header>
-        <h1>Projects</h1>
+        <h1></h1>
         <nav class="links">
             <ul>
                 <li><a class="btn btn-light" href="./index.html" role="button">Home</a></li>
@@ -21,50 +21,49 @@
     </header>
         
     <main>
-        <section id="intro">
-            <h2>Welcome to My Coding Portfolio</h2>
-            <p>I am currently a Master of Finance student at the Weatherhead School of Management,
-                apart of Case Western Reserve University in Cleveland, Ohio. I'm planning to focus my degree in either Fintech or Big Data Analytics. For a future career,
-                 I am most intrigued in how computer science concepts can be applied to finance.</p>
-
-        </section>
-
-        <section id="skills">
-            <h3>Core Skills</h3>
+        <section id="projects">
+            <h3>Coding Projects</h3>
             <div class="skillgrid">
                 <div class="skillcard">
-                    <h4>Microsoft Excel Usage</h4>
+                    <h4>Employee Directory Manager</h4>
                     <div class="skill-level">
                         <div class="skill-bar" style="width: 90%;"></div>
                     </div>
-                    <ul>
-                        <li>Advanced Formulas</li>
-                        <li>PivotTables</li>
-                        <li>Visualization</li>
+                    <p>This C program loads sample csv data into a hash table and then allows the user
+                        to find an employee, delete an employee, or print out all employees.
+                         The user will navigate a basic interface, allowing them to work with the program.</p>
+                    <ul class="projfeatures">
+                        <li>Load employee data from CSV file into a hash table</li>
+                        <li>Find an employee by ID</li>
+                        <li>Delete an employee record</li>
+                        <li>Print all employee information</li>
+                        <li>Efficient data retrieval using hash table with chaining for collision resolution</li>
+                        <li><a href="https://github.com/chrisda28/Employee-Directory-Manager-with-Hash-Table-in-C">View Repository on Github</a></li>
+
                     </ul>
                 </div>
                 <div class="skillcard">
-                    <h4>Python Programming</h4>
+                    <h4>Bank Stock Analysis</h4>
                     <div class="skill-level">
                         <div class="skill-bar" style="width: 90%;"></div>
                     </div>
+                    <p>Python scripts make API call to get historical time series data for JPMorgan, 
+                        Bank of America, Goldman Sachs, and Citigroup for the past 20 years.
+                         The data is formatted and analyzed with Pandas and used to make visualization
+                          with Seaborn that are rendered in Flask. For JPMorgan specifically,
+                           using scikit-learn the program entails a basic linear regression model
+                            to predict the daily return (price change as a percentage) for the next day.</p>
                     <ul>
-                        <li>Data Analysis</li>
-                        <li>API Integration</li>
-                        <li>Flask</li>
+                        <li>Languages: Python, HTML, CSS</li>
+                        <li>Calculate metrics such as correlation, standard deviation, 20-day moving average price
+                            , and implement a linear regression model.</li>
+                        <li>Show the calculated metrics with data visualizations in a Flask web application</li>
+                        <li>Provide commentary in Flask app explaining visualization and news sources cited</li>
+                        <li>Linear regression model predicts next day's daily return using most current data</li>
+                        <li>Technologies Used: Flask, Pandas, Scikit-learn, AlphaVantage API, Seaborn, Bootstrap</li>
+                        <li><a href="https://github.com/chrisda28/stockanalyzer">View Repository on Github</a></li>
                     </ul>
                 </div>    
-                <div class="skillcard">
-                    <h4>Intermediate C Programming</h4>
-                    <div class="skill-level">
-                        <div class="skill-bar" style="width: 90%;"></div>
-                    </div>
-                    <ul>
-                        <li>Data Structures</li>
-                        <li>Chaining with Hash Tables</li>
-                        <li>Dynamic Memory Allocation</li>
-                    </ul>
-                </div>     
             </div>
         </section>
     </main>
