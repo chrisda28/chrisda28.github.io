@@ -3,20 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Asimou - About me</title>
+    <meta name="description" content="Coding portfolio for Christian Asimou">
+    <title>Christian Asimou - Coding Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="gradient-background">
     <header>
-        <!-- Add your header content here -->
+        <h1>Christian Asimou</h1>
+        <nav class="links">
+            <ul>
+                <li><a class="btn btn-light" href="./index.html" role="button">Home</a></li>
+                <li><a class="btn btn-light" href="./projects.html" role="button">Projects</a></li>
+                <li><a class="btn btn-light" href="./about.html" role="button">About Me/Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
+        
     <main>
-        <h1>test</h1>
+        <section id="intro">
+            <h2>Welcome to My Coding Portfolio</h2>
+            <p>I am currently a Master of Finance student at the Weatherhead School of Management,
+                apart of Case Western Reserve University in Cleveland, Ohio. I'm planning to focus my degree in either Fintech or Big Data Analytics. For a future career,
+                 I am most intrigued in how computer science concepts can be applied to finance.</p>
+
+        </section>
+
+        <section id="skills">
+            <h3>Core Skills</h3>
+            <div class="skillgrid">
+                <div class="skillcard">
+                    <h4>Microsoft Excel Usage</h4>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <ul>
+                        <li>Advanced Formulas</li>
+                        <li>PivotTables</li>
+                        <li>Visualization</li>
+                    </ul>
+                </div>
+                <div class="skillcard">
+                    <h4>Python Programming</h4>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>API Integration</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>    
+                <div class="skillcard">
+                    <h4>Intermediate C Programming</h4>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Chaining with Hash Tables</li>
+                        <li>Dynamic Memory Allocation</li>
+                    </ul>
+                </div>     
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <!-- Add your footer content here -->
+    <footer class="foot">
+        <p>&copy; Christian Asimou. All rights reserved. </p>
+        <p><a href="https://www.linkedin.com/in/christian-asimou/">Connect on LinkedIn</a></p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
