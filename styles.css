@@ -40,6 +40,8 @@
 #hello  h1{
   color: white;
   font-size: 125px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
   text-align: center;
 }
 
