@@ -3,42 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coding portfolio for Christian Asimou">
-    <title>Christian Asimou - Coding Portfolio</title>
+    <meta name="description" content="Christian Asimou - Coding Portfolio | Master of Finance student specializing in Fintech and Big Data.">
+    <title>Christian Asimou - Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+    
 </head>
-<body class="gradient-background">
-    <header>
-        <nav class="links">
-            <ul>
-                <li><a class="btn btn-light" href="./index.html" role="button">Home</a></li>
-                <li><a class="btn btn-light" href="./projects.html" role="button">Projects</a></li>
-                <li><a class="btn btn-light" href="./about.html" role="button">About Me/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        
-    <main>
-        <section id="intro">
-            <h2></h2>
-            <p></p>
+<body class="gradient-background d-flex flex-column">
 
+    <header>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3">
+                <h1 class="site-title mb-2 mb-md-0">Christian Asimou</h1>
+                <nav class="links">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a class="nav-link-custom" href="#hero">Home</a></li>
+                        <li class="list-inline-item"><a class="nav-link-custom" href="#about">About</a></li>
+                        <li class="list-inline-item"><a class="nav-link-custom" href="#projects">Projects</a></li>
+                        <li class="list-inline-item"><a class="nav-link-custom" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow-1">
+        <section id="hero" class="text-center py-5 d-flex flex-column justify-content-center align-items-center">
+            <div id="hero-mouse-aura"></div>
+            <div class="container hero-content" data-aos="fade-in" data-aos-delay="200">
+                <h2 class="hero-title">Hello, I'm Chris</h2>
+                <p class="lead hero-subtitle">Welcome to my portfolio. </p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Projects</a>
+            </div>
         </section>
 
-        <section id="hello">
-            <h1>Hello, I'm Chris</h1>
+        
+        <section id="about" class="py-5 page-section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="text-center section-heading">About Me</h2>
+                <p class="lead text-center section-subheading">I am currently working in commercial insurance underwriting in the Cleveland area.
+                   Working to find actionable insights in data is a big part of my job, and I hope to soon learn deeper skills in data science and machine learning.</p>
+            </div>
+        </section>
+
+       
+        <section id="projects" class="py-5 page-section bg-light-shade">
+            <div class="container">
+                <h2 class="text-center section-heading mb-5" data-aos="fade-up">My Coding Projects</h2>
+                <div class="project-grid row">
+               
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Predictive Credit Risk Model & Web Application</h4>
+                                <p>A group project done while at CWRU and sponsored by KeyBank. We analyzed 210,000 records of consumer lending data using Matplotlib, Seaborn, Pandas, and Sci-kit Learn libraries.
+                                    Tested and refined logistic regression, random forest, and gradient boosting approaches to credit risk modeling using Python.
+                                    We decided to use a logistic regression model to enhance explainability, and incorporated features covering
+                                    credit history, loan purpose, debt-to-income ratio, and more.
+                                    Finally, we created an interactive web application with Typescript/React to host the credit risk model.
+                                </p>
+                                <ul class="projfeatures">
+                                    <li>User friendly interface with Typescript/React</li>
+                                    <li>Credit risk model trained from 210,000 records of consumer lending data</li>
+                                    <li>Working prototype of web app using logistic regression model</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/SonnyASmith/Credit-Risk-Modeling-Project.git" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Dividend Empirical Analysis</h4>
+                                <p>An individual project done while at CWRU. This project analyzes firms that begin paying dividends after a period of not doing so. 
+                                    It investigates the market's reaction to these dividend initiation announcements of 551 firms, the factors influencing this reaction, and the characteristics of firms that decide to start paying dividends.
+                                    I developed multiple and logistic regression models to determine the likelihood of a firm initating dividends while incorporating control and interaction effects.
+                                </p>
+                                <ul class="projfeatures">
+                                    <li>See the full report of results in the GitHub repo below</li>
+                                    <li>Markets react positively in a statistically significant manner to dividend initiations.</li>
+                                    <li>SAS code tests for heteroscedasticity</li>
+                                    <li>Firm size and firm age are found to be the biggest determinants of firm's decision to intiate dividends.</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/chrisda28/Dividend-Empirical-Analysis.git" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Employee Directory Manager</h4>
+                                <p>This C program loads sample employee csv data into a hash table and then allows the user
+                                    to find an employee, delete an employee, or print out all employees.
+                                     The user will navigate a basic interface, allowing them to work with the program.</p>
+                                <ul class="projfeatures">
+                                    <li>Load employee data from CSV file into a hash table</li>
+                                    <li>Find an employee by ID</li>
+                                    <li>Delete an employee record</li>
+                                    <li>Print all employee information</li>
+                                    <li>Efficient data retrieval using hash table with chaining for collision resolution</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/chrisda28/Employee-Directory-Manager-with-Hash-Table-in-C" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+       
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Fed Meeting Minutes Sentiment Analysis</h4>
+                                <p>Scrapes and analyzes Federal Reserve meeting minutes articles for the past two years.
+                                     It uses a pretrained financial text model (ProsusAI/finBERT)
+                                      to analyze sentiment and basic functionality to count specific keywords.
+                                      The results are visualized through various plots and a basic user interface in the Python console.</p>
+                                <ul class="projfeatures">
+                                    <li>Scrapes Fed meeting minutes for past two years</li>
+                                    <li>Analyzes sentiment using a pretrained financial text model</li>
+                                    <li>Counts specific keywords and visualizes data (heatmap, trend plot)</li>
+                                    <li>Technologies Used: Pandas, Pytorch, Matplotlib, Seaborn, BeautifulSoup</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/chrisda28/fed_minutes_sentiment" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card h-100 d-flex flex-column">
+                             <div class="card-body-custom flex-grow-1">
+                                <h4>Bank Stock Analysis</h4>
+                                <p>Python scripts make API call to get historical time series data for JPMorgan,
+                                    Bank of America, Goldman Sachs, and Citigroup for the past 20 years.
+                                     The data is formatted and analyzed with Pandas and used to make visualizations
+                                      with Seaborn that are rendered in Flask. For JPMorgan specifically,
+                                       using scikit-learn, the program entails a basic linear regression model
+                                        to predict the daily return (price change as a percentage) for the next day.</p>
+                                <ul class="projfeatures">
+                                    <li>Languages: Python, HTML, CSS</li>
+                                    <li>Calculate metrics: correlation, std dev, 20-day MA, linear regression.</li>
+                                    <li>Visualize metrics in a Flask web application with commentary.</li>
+                                    <li>Technologies: Flask, Pandas, Scikit-learn, AlphaVantage API, Seaborn, Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                 <a href="https://github.com/chrisda28/stockanalyzer" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="py-5 page-section">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="section-heading">Contact Me</h2>
+                <ul class="list-unstyled contact-links mt-4">
+                    <li>Personal email: <a href="mailto:chrisda28@gmail.com?subject=Portfolio Inquiry">chrisda28@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/christian-asimou/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer class="foot">
-        <p>&copy; Christian Asimou. All rights reserved. </p>
-        <p><a href="https://www.linkedin.com/in/christian-asimou/">Connect on LinkedIn</a></p>
+   
+    <footer class="foot text-center text-lg-left mt-auto">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center py-3">
+            <p class="mb-2 mb-lg-0">&copy; Christian Asimou. All rights reserved.</p>
+            <p class="mb-0"><a href="https://www.linkedin.com/in/christian-asimou/" target="_blank" rel="noopener noreferrer" class="footer-linkedin-link">Connect on LinkedIn</a></p>
+        </div>
     </footer>
-    <!-- Bootstrap JS and dependencies -->
+
+   
+    <div id="mouse-follower"></div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800, 
+            once: true, 
+        });
+
+        // Mouse Follower & Hero Aura Script
+        const mainFollower = document.getElementById('mouse-follower');
+        const heroAura = document.getElementById('hero-mouse-aura');
+        const heroSection = document.getElementById('hero');
+
+        let mouseX = 0, mouseY = 0;
+        
+        // For the small, sharp follower
+        let mainFollowerX = 0, mainFollowerY = 0;
+        const mainFollowerSpeed = 0.1; 
+
+        // For the hero background aura (direct follow, no trailing for this one for simplicity)
+        // Or add similar trailing logic if desired.
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateEffects() {
+            // Main follower (small, sharp)
+            if (mainFollower) {
+                let dx = mouseX - mainFollowerX;
+                let dy = mouseY - mainFollowerY;
+                mainFollowerX += dx * mainFollowerSpeed;
+                mainFollowerY += dy * mainFollowerSpeed;
+                mainFollower.style.left = mainFollowerX + 'px';
+                mainFollower.style.top = mainFollowerY + 'px';
+            }
+
+            // Hero background aura
+            if (heroAura && heroSection) {
+                const heroRect = heroSection.getBoundingClientRect();
+                // Calculate mouse position relative to the hero section for the aura's gradient center
+                const auraX = mouseX - heroRect.left;
+                const auraY = mouseY - heroRect.top;
+                
+                // Aura effect will be stronger (0.2 opacity, 50% spread)
+                heroAura.style.background = `radial-gradient(circle at ${auraX}px ${auraY}px, rgba(var(--accent-primary-rgb), 0.18) 0%, transparent 50%)`;
+            }
+            
+            requestAnimationFrame(animateEffects);
+        }
+        
+        // Start animation if either element exists
+        if (mainFollower || heroAura) {
+            requestAnimationFrame(animateEffects);
+        }
+    </script>
 </body>
 </html>

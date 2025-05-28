@@ -3,96 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coding portfolio for Christian Asimou">
-    <title>Christian Asimou - Coding Portfolio</title>
+    <meta name="description" content="Coding projects by Christian Asimou, showcasing work in C, Python, data analysis, and machine learning.">
+    <title>Projects - Christian Asimou</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="gradient-background">
-    <header>
-        <h1></h1>
-        <nav class="links">
-            <ul>
-                <li><a class="btn btn-light" href="./index.html" role="button">Home</a></li>
-                <li><a class="btn btn-light" href="./projects.html" role="button">Projects</a></li>
-                <li><a class="btn btn-light" href="./about.html" role="button">About Me/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        
-    <main>
-        <section id="projects">
-            <h3>Coding Projects</h3>
-            <div class="skillgrid">
-                <div class="skillcard">
-                    <h4>Employee Directory Manager</h4>
-                    <div class="skill-level">
-                        <div class="skill-bar" style="width: 90%;"></div>
-                    </div>
-                    <p>This C program loads sample employee csv data into a hash table and then allows the user
-                        to find an employee, delete an employee, or print out all employees.
-                         The user will navigate a basic interface, allowing them to work with the program.</p>
-                    <ul class="projfeatures">
-                        <li>Load employee data from CSV file into a hash table</li>
-                        <li>Find an employee by ID</li>
-                        <li>Delete an employee record</li>
-                        <li>Print all employee information</li>
-                        <li>Efficient data retrieval using hash table with chaining for collision resolution</li>
-                        <li><a href="https://github.com/chrisda28/Employee-Directory-Manager-with-Hash-Table-in-C">View Repository on Github</a></li>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> </head>
+<body class="gradient-background d-flex flex-column">
+    <div id="header-placeholder"></div>
 
-                    </ul>
-                </div>
-                <div class="skillcard">
-                    <h4>Bank Stock Analysis</h4>
-                    <div class="skill-level">
-                        <div class="skill-bar" style="width: 90%;"></div>
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <section id="projects-section">
+                <h2 class="text-center mb-5">My Coding Projects</h2>
+                <div class="project-grid row">
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Employee Directory Manager</h4>
+                                <p>This C program loads sample employee csv data into a hash table and then allows the user
+                                    to find an employee, delete an employee, or print out all employees.
+                                     The user will navigate a basic interface, allowing them to work with the program.</p>
+                                <ul class="projfeatures">
+                                    <li>Load employee data from CSV file into a hash table</li>
+                                    <li>Find an employee by ID</li>
+                                    <li>Delete an employee record</li>
+                                    <li>Print all employee information</li>
+                                    <li>Efficient data retrieval using hash table with chaining for collision resolution</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/chrisda28/Employee-Directory-Manager-with-Hash-Table-in-C" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Python scripts make API call to get historical time series data for JPMorgan, 
-                        Bank of America, Goldman Sachs, and Citigroup for the past 20 years.
-                         The data is formatted and analyzed with Pandas and used to make visualizations
-                          with Seaborn that are rendered in Flask. For JPMorgan specifically,
-                           using scikit-learn, the program entails a basic linear regression model
-                            to predict the daily return (price change as a percentage) for the next day.</p>
-                    <ul class="projfeatures">
-                        <li>Languages: Python, HTML, CSS</li>
-                        <li>Calculate metrics such as correlation, standard deviation, 20-day moving average price, and implement a linear regression model.</li>
-                        <li>Show the calculated metrics with data visualizations in a Flask web application</li>
-                        <li>Provide commentary in Flask app explaining visualization and news sources cited</li>
-                        <li>Linear regression model predicts next day's daily return using most current data</li>
-                        <li>Technologies Used: Flask, Pandas, Scikit-learn, AlphaVantage API, Seaborn, Bootstrap (front-end kit)</li>
-                        <li><a href="https://github.com/chrisda28/stockanalyzer">View Repository on Github</a></li>
-                    </ul>
-                </div>
-                <div class="skillcard">
-                    <h4>Fed Meeting Minutes Sentiment Analysis</h4>
-                    <div class="skill-level">
-                        <div class="skill-bar" style="width: 90%;"></div>
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                        <div class="project-card h-100 d-flex flex-column">
+                             <div class="card-body-custom flex-grow-1">
+                                <h4>Bank Stock Analysis</h4>
+                                <p>Python scripts make API call to get historical time series data for JPMorgan,
+                                    Bank of America, Goldman Sachs, and Citigroup for the past 20 years.
+                                     The data is formatted and analyzed with Pandas and used to make visualizations
+                                      with Seaborn that are rendered in Flask. For JPMorgan specifically,
+                                       using scikit-learn, the program entails a basic linear regression model
+                                        to predict the daily return (price change as a percentage) for the next day.</p>
+                                <ul class="projfeatures">
+                                    <li>Languages: Python, HTML, CSS</li>
+                                    <li>Calculate metrics: correlation, std dev, 20-day MA, linear regression.</li>
+                                    <li>Visualize metrics in a Flask web application with commentary.</li>
+                                    <li>Technologies: Flask, Pandas, Scikit-learn, AlphaVantage API, Seaborn, Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                 <a href="https://github.com/chrisda28/stockanalyzer" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Scrapes and analyzes Federal Reserve meeting minutes articles for the past two years,
-                         including the current year. It uses a pretrained financial text model (ProsusAI/finBERT)
-                          to analyze sentiment (positive, negative, or neutral) and basic functionality to count specific keywords in the articles. 
-                          The results are visualized through various plots and a basic user interface in the Python console.</p>
-                    <ul class="projfeatures">
-                        <li>Scrapes Federal Reserve meeting minutes articles for the past two years</li>
-                        <li>Analyzes sentiment of articles using a pretrained financial text model</li>
-                        <li>Counts occurrences of specific keywords in the articles</li>
-                        <li>Shows heatmap of keyword count spanning all scraped articles</li>
-                        <li>Sentiment trend plot across all articles</li>
-                        <li>Technologies Used: Pandas, Pytorch, Matplotlib, Seaborn, BeautifulSoup</li>
-                        <li><a href="https://github.com/chrisda28/fed_minutes_sentiment">View Repository on Github</a></li>
-
-                    </ul>
-                </div>    
-            </div>
-        </section>
+                    <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                        <div class="project-card h-100 d-flex flex-column">
+                            <div class="card-body-custom flex-grow-1">
+                                <h4>Fed Meeting Minutes Sentiment Analysis</h4>
+                                <p>Scrapes and analyzes Federal Reserve meeting minutes articles for the past two years.
+                                     It uses a pretrained financial text model (ProsusAI/finBERT)
+                                      to analyze sentiment and basic functionality to count specific keywords.
+                                      The results are visualized through various plots and a basic user interface in the Python console.</p>
+                                <ul class="projfeatures">
+                                    <li>Scrapes Fed meeting minutes for past two years</li>
+                                    <li>Analyzes sentiment using a pretrained financial text model</li>
+                                    <li>Counts specific keywords and visualizes data (heatmap, trend plot)</li>
+                                    <li>Technologies Used: Pandas, Pytorch, Matplotlib, Seaborn, BeautifulSoup</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer-custom mt-auto">
+                                <a href="https://github.com/chrisda28/fed_minutes_sentiment" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="foot">
-        <p>&copy; Christian Asimou. All rights reserved. </p>
-        <p><a href="https://www.linkedin.com/in/christian-asimou/">Connect on LinkedIn</a></p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function loadHTML(filePath, elementId) {
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText + ' for ' + filePath);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    const element = document.getElementById(elementId);
+                    if (element) {
+                        element.innerHTML = data;
+                    } else {
+                        console.error('Element with ID ' + elementId + ' not found.');
+                    }
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation for ' + elementId + ':', error);
+                    const element = document.getElementById(elementId);
+                    if (element) {
+                        element.innerHTML = '<p class="text-danger text-center">Error loading content. Please try refreshing the page.</p>';
+                    }
+                });
+        }
+        loadHTML('./header.html', 'header-placeholder');
+        loadHTML('./footer.html', 'footer-placeholder');
+    </script>
 </body>
 </html>

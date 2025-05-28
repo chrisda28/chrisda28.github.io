@@ -3,48 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coding portfolio for Christian Asimou">
-    <title>Christian Asimou - Coding Portfolio</title>
+    <meta name="description" content="About Christian Asimou - Master of Finance student with a focus on Fintech and Big Data Analytics.">
+    <title>About Me - Christian Asimou</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="gradient-background">
-    <header>
-        <h1>Christian Asimou</h1>
-        <nav class="links">
-            <ul>
-                <li><a class="btn btn-light" href="./index.html" role="button">Home</a></li>
-                <li><a class="btn btn-light" href="./projects.html" role="button">Projects</a></li>
-                <li><a class="btn btn-light" href="./about.html" role="button">About Me/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        
-    <main>
-        <section id="intro">
-            <h2>About Me</h2>
-            <p>I am currently a Master of Finance student at the Weatherhead School of Management,
-                apart of Case Western Reserve University in Cleveland, Ohio. I'm planning to focus my degree in either Fintech or Big Data Analytics. For a future career,
-                 I am most intrigued in how computer science concepts can be applied to finance.</p>
-        </section>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> </head>
+<body class="gradient-background d-flex flex-column">
+    <div id="header-placeholder"></div>
 
-        <section id="contact">
-            <h3>Contact Me</h3>
-            <ul>
-                <li>School email: <a href="mailto:cda54@case.edu?subject=Hello&body=I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">cda54@case.edu</a></li>
-                <li>Personal email: <a href="mailto:chrisda28@gmail.com?subject=Hello&body=I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">chrisda28@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/christian-asimou/">https://www.linkedin.com/in/christian-asimou/</a></li>
-            </ul>
-            
-        </section>
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <section id="intro" class="mb-5 text-center">
+                <h2>About Me</h2>
+                <p class="lead">I am currently a Master of Finance student at the Weatherhead School of Management,
+                    part of Case Western Reserve University in Cleveland, Ohio. I'm planning to focus my degree in either Fintech or Big Data Analytics. For a future career,
+                     I am most intrigued in how computer science concepts can be applied to finance.</p>
+            </section>
+
+            <section id="contact" class="text-center">
+                <h3>Contact Me</h3>
+                <ul class="list-unstyled">
+                    <li>School email: <a href="mailto:cda54@case.edu?subject=Hello&body=I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">cda54@case.edu</a></li>
+                    <li>Personal email: <a href="mailto:chrisda28@gmail.com?subject=Hello&body=I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">chrisda28@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/christian-asimou/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <footer class="foot">
-        <p>&copy; Christian Asimou. All rights reserved. </p>
-        <p><a href="https://www.linkedin.com/in/christian-asimou/">Connect on LinkedIn</a></p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function loadHTML(filePath, elementId) {
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText + ' for ' + filePath);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    const element = document.getElementById(elementId);
+                    if (element) {
+                        element.innerHTML = data;
+                    } else {
+                        console.error('Element with ID ' + elementId + ' not found.');
+                    }
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation for ' + elementId + ':', error);
+                    const element = document.getElementById(elementId);
+                    if (element) {
+                        element.innerHTML = '<p class="text-danger text-center">Error loading content. Please try refreshing the page.</p>';
+                    }
+                });
+        }
+        loadHTML('./header.html', 'header-placeholder');
+        loadHTML('./footer.html', 'footer-placeholder');
+    </script>
 </body>
 </html>
